@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>History</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="../CSS/tutorhistory.css"/>
+
+<link href="../CSS/all.css" rel="stylesheet"/>
+
+</head>
+
+<body> 
+ <button class="accordion1"><h2><b>Introduction</b></h2></button>
+ <div class="panel">
+   <p>Ever wondered what it's like to travel back in time and witness history firsthand?
+      I'm a passionate history teacher with a Master's degree and over ten years of teaching experience. 
+      I've helped students excel in history exams, and I'm confident I can help you too. 
+      Join my history tuition classes to explore the past like never before. Contact me to enroll.
+   </p>
+ </div>
+ 
+ <button class="accordion2"><h2><b>Educational Background</b></h2></button>
+ <div class="panel">
+  <ul class="a">
+    <li>A degree holder in University of Cambridge </li>
+    <li>Over 10 years of teaching experience</li>
+    <li>Over 1000 A+ students</li>
+  </ul>
+ </div>
+ 
+ <button class="accordion3"><h2><b>Teaching Experience</b></h2></button>
+ <div class="panel">
+  <ul>
+    <li>Providing education to adolescents in history related subject in SMJK KATHOLIK HIGH SCHOOL.</li>
+    <li>Held over 1000+ education talk to all over the state in Malaysia.</li>
+    <li>Participate in <em>Mayan civilization</em> research project in Mexico.</li>
+  </ul> 
+ </div>
+ 
+ <button class="accordion4"><h2><b>Student Success Story</b></h2></button>
+ <div class="panel">
+  <p>One of my proudest achievement is an A+ in History in my finals. The hard work really did paid off since
+    I start taking tuition classes with Mr. Lucas. I always thought I'm not a bad learner since i barely pass
+    History but with Mr. Lucas dedication in teaching, he uses a lot of specialise memory techniques he invented
+    to get us to memories easily! Super fun and useful for beginners like me. </br> -- Susan -- </p>
+  <p>I succeed in history class is so inspiring! I struggled at first but, with Mr. Lucas's help,
+    I improved my grades and even got an A+ on my history exam. It's a great example of how a dedicated
+    teacher and hard work can make a real difference. </br>-- Christine --</p> 
+ </div>
+
+ <button class="accordion5"><h2><b>Supportive Environment</b></h2></button>
+ <div class="panel">
+  <p>Mr. Lucas seperated students into a different classes to easily get in track with student learning process.
+    MR. Lucas can help with student that have poor learning process and tutor them step-by-step achieving 
+    excellent results in their exam.The classroom is colourful and air-conditioned providing fun and comfortable
+    space to learn and study. Digital whiteboard provide various possible teaching methods to support teaching 
+    students in the class.  
+  </p> 
+ </div>
+ 
+ <script>
+
+var acc = document.getElementsByClassName("accordion1");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active1");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+  });
+}
+
+
+
+var acc = document.getElementsByClassName("accordion2");
+var a;
+
+for (a = 0; a < acc.length; a++) {
+  acc[a].addEventListener("click", function() {
+    this.classList.toggle("active2");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+  });
+}
+
+var acc = document.getElementsByClassName("accordion3");
+var n;
+
+for (n = 0; n < acc.length; n++) {
+  acc[n].addEventListener("click", function() {
+    this.classList.toggle("active3");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+  });
+}
+
+var acc = document.getElementsByClassName("accordion4");
+var m;
+
+for (m = 0; m < acc.length; m++) {
+  acc[m].addEventListener("click", function() {
+    this.classList.toggle("active4");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+  });
+}
+
+
+var acc = document.getElementsByClassName("accordion5");
+var y;
+
+for (y = 0; y < acc.length; y++) {
+  acc[y].addEventListener("click", function() {
+    this.classList.toggle("active5");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+  });
+}
+
+
+
+ </script>
+
+</body>
+

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keyword" content="super ,duper,tuition"/>
+
+    <title>Super-Duper tuition center</title>
+   
+    <link href="../css/all.css" rel="stylesheet"/>
+    <link href="../CSS/home.css" rel="stylesheet"/>
+   
+    
+    <link href="" rel="stylesheet"/>
+    <link href="" rel="stylesheet"/>
+
+    <script src="../JavaScript/home.js" defer></script>
+
+
+
+</head>
+
+
+
+<body>
+    <header>
+      <img src="../pictures/logo.jpeg" style="width:15%; height:15%;"/>  
+      <img src="../pictures/logo2.png" style="width:80%; height:80%;"/>
+      
+       
+        <nav class="horizontal">
+            <ul class="mainMenu">
+                <li><a href="home.html" class="subMenuTitle">Home</a></li>
+
+                <li><a href="about-us.html" class="subMenuTitle">about us &#9654;</a>
+                    <ul class="subMenu">
+                        <li><a href="accreditation.html">Accreditation</a></li>
+                        <li><a href="history.html">History</a></li>
+                        <li><a href="strategy.html">Strategy</a></li>
+                    </ul>
+
+                </li>
+
+                <li><a href="cta.html" class="subMenuTitle">CTA(call to action) &#9654;</a>
+                    <ul class="subMenu">
+                        <li><a href="contactus.html">Contact Us</a></li>
+                        <li><a href="login.html">application</a></li>
+                        <li><a href="Payment.html">payment</a></li>
+                    </ul>
+
+                </li>
+
+                <li><a href="subpage.html" class="subMenuTitle">subject & tutor &#9654;</a>
+                    <ul class="subMenu">
+                        <li><a href="tutoram.html">Tutor for Additional Mathematics</a></li>
+                        <li><a href="bio.html">Tutor for Biology</a></li>
+                        <li><a href="tutorACC.html">Tutor for Accounting</a></li>
+                        <li><a href="ekonomi.html">Tutor for Economy</a></li>
+                        <li><a href="welcome.html">Tutor for History</a></li>
+                        <li><a href="timetable.html">Schedule</a></li>
+                    </ul>
+
+                </li>
+                
+               
+                <li><a href="otherInfo.html" class="subMenuTitle">others information &#9654;</a>
+                    <ul class="subMenu">
+                        <li><a href="FAQ.html">FAQ</a></li>
+                        <li><a href="feedback.html">Feedback</a></li>
+                        <li><a href="review.html">Review</a></li>
+                        <li><a href="fees.html">Fees</a></li>
+
+                    </ul>
+
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+        <div><br/>
+            <h1>"Welcome to Super-Duper Tuition Center, where learning comes to life! We're thrilled that you've chosen to explore our educational haven dedicated to nurturing young minds and fostering academic success.</h1>
+
+        </div>
+
+
+        <div class="slideshow-container">
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="../pictures/main image.PNG" style="width:100%"/>
+    
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="../pictures/main image 2.PNG" style="width:100%"/>
+   
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="../pictures/main image 3.PNG" style="width:100%"/>
+    
+  </div>
+  
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+       
+
+
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+
+// Automatically change slides every 4 seconds
+var autoSlideInterval = setInterval(function() {
+  plusSlides(1);
+}, 4000);
+
+// Pause automatic slide change on mouse hover
+var slideshowContainer = document.querySelector('.slideshow-container');
+slideshowContainer.addEventListener('mouseenter', function() {
+  clearInterval(autoSlideInterval);
+});
+
+// Resume automatic slide change on mouse leave
+slideshowContainer.addEventListener('mouseleave', function() {
+  autoSlideInterval = setInterval(function() {
+    plusSlides(1);
+  }, 4000);
+});
+showSlides(slideIndex);
+
+ </script>
+<div class="grid-container">
+<div class="mission">
+            <img src="../pictures/mission.png" alt="mission" style="width: 210px; height: 215px;"/>
+            <h2>Mission</h2>
+            <P> At Super-Duper Tuition Center, we believe that every student has the potential to achieve greatness. Our mission is to provide a supportive and enriching learning environment that empowers students to excel in their studies and reach their full potential. With a team of dedicated and passionate educators, we are committed to helping students grow not only academically but also personally.</P>
+            <p>"At Super-Duper Tuition Center, our mission is to empower students to achieve their full potential through personalized, high-quality education. We are dedicated to fostering a love for learning, providing exceptional academic support, and nurturing well-rounded individuals who are prepared to excel in a rapidly changing world."</p>
+</div>
+
+<div class="values">
+            <img src="../pictures/values.png" alt="values" style="width: 210px; height: 215px;"/>
+            <h2>Values</h2>
+            <ul>
+              <li>Excellence: We are committed to delivering excellence in education and continuously striving for the highest standards of teaching and learning.</li>
+              <li>Inclusivity: We embrace diversity and ensure that all students have access to quality education, regardless of their backgrounds.</li>
+              <li>Innovation: We embrace innovation and adapt to evolving educational practices and technologies to enhance the learning experience.</li>
+              <li>Community: We foster a supportive and collaborative learning community where students, parents, and educators work together to achieve success.</li>
+            </ul>
+</div>
+
+<div class="vision">
+            
+            <img src="../pictures/vision.png" alt="vision" style="width: 210px; height: 215px;"/>
+            <h2>Vision</h2>
+            <p>"Our vision is to be a leading educational institution that not only imparts knowledge but also instills a passion for lifelong learning. We aim to prepare students to meet the challenges of the future with confidence, critical thinking skills, and a strong sense of purpose. By 2030, we envision Super-Duper Tuition Center as a hub for educational excellence and a symbol of inspiration for students and parents alike."</p>
+</div>
+      <div class="founder">
+            <h2>Founder : Baron Willy Wonka</h2>
+            <img src="../pictures/founder.png" alt="founder"/>
+          <div id="founder">
+            <p>Ladies and gentlemen, students, parents, and distinguished guests,</p>
+            <p>I stand before you today with immense pride and gratitude as the founder of Super-Duper Tuition Center. It's an honor to share with you the vision and journey that brought us to this moment.</p>
+            <p>Super-Duper Tuition Center was established in 1998, driven by a profound belief in the transformative power of education. As a lifelong educator, I've witnessed firsthand the incredible impact that quality education can have on individuals and communities.</p>
+            <p>Our center's story began with a simple yet powerful idea: to create an educational institution that doesn't just teach subjects but nurtures minds, sparks curiosity, and instills a lifelong love for learning. We envisioned a place where every student, regardless of their background, could access the resources and guidance needed to thrive academically.</p>
+            <p>Over the years, Super-Duper Tuition Center has grown and evolved, thanks to the dedication of our exceptional team of educators, the unwavering support of our students and parents, and the vibrant community that surrounds us. Together, we've achieved remarkable milestones.</p>
+            <p>Our commitment to excellence extends to every facet of our center. We take pride in our educators who are not only experts in their fields but also mentors, motivators, and champions of each student's unique potential. Our curriculum is designed not just to meet academic standards but to inspire critical thinking, creativity, and problem-solving skills.</p>
+            <p>At Super-Duper Tuition Center, we recognize that education goes beyond textbooks and classrooms. It's about nurturing well-rounded individuals who are prepared to face the challenges of the future. To that end, we offer a range of extracurricular activities, workshops, and community initiatives to enrich the educational experience.</p>
+            <p>As we look to the future, our mission remains clear: to empower students with the knowledge, skills, and confidence they need to excel in their academic pursuits and beyond. We're committed to staying at the forefront of educational innovation, adapting to the ever-changing landscape, and continuously improving our offerings.</p>
+            <p>To our students, I want to say this: You are at the heart of everything we do. Your dreams, aspirations, and growth are our driving force. Remember that every challenge you face is an opportunity to learn and grow. Embrace each moment of your educational journey with enthusiasm, and never stop asking questions.</p>
+            <p>To the parents who have entrusted us with the education of your children, thank you for your faith in our center. We understand the importance of this responsibility, and we are committed to providing the best possible educational experience for your child.</p>
+            <p>In closing, I want to express my deepest gratitude to all who have been a part of our journey. Together, we will continue to inspire, educate, and empower generations of learners. The future is bright, and with education as our guiding light, there are no limits to what we can achieve.</p>
+            <p>Thank you for joining us on this incredible journey. Here's to a future filled with knowledge, growth, and success for all.</p>
+          </div>
+        </div>
+        
+        
+        <div class="why">
+            <h2 > Why study in Super-Duper</h2>
+            <P> Whether your child is seeking to master challenging subjects, prepare for important exams, or simply build a strong foundation for lifelong learning, we're here to guide them every step of the way. Our innovative teaching methods, interactive lessons, and personalized attention ensure that each student's unique strengths and needs are addressed.</P>
+
+        </div>
+        <div class="video">
+            <h2>Video introduction : </h2>
+            <video controls>
+              <source src="../video and audio/Intro Education video.mp4" type="video/mp4" />
+              <p>Upgrade your browser to HTML5</p>
+            </video>
+        </div>
+        <div class="explo">
+              <div class="h2"><h2 class>Explore the wonder of studies at Super-Duper tuition center</h2></div>
+                
+              
+            <div class="aboutus">
+              <p>About us :</p>
+              <a href="about-us.html"><img src="../pictures/aboutus.png" alt="about us" style="width:350px; height:350px"/></a>
+            </div>
+            <div class="st">
+              <p>Subject & tutor :</p>
+              <a href="subpage.html"><img src="../pictures/s&t.jpg" alt="subject & tutor" style="width:350px; height:350px"/></a>
+            </div>
+            <div class="cta">
+              <p>Call to action :</p>
+              <a href="cta.html"><img src="../pictures/cta.jpg" alt="call to action"  style="width:350px; height:350px"/></a>
+            </div>
+            <div class="ne">
+              <p>Ohters information :</p>
+              <a href="otherInfo.html"><img src="../pictures/n&e.jpg" alt="news and event"  style="width:350px; height:350px"/></a>
+            </div>
+        </div>
+       
+        <div class="join">
+            <P>Join us on this educational journey, where curiosity is encouraged, knowledge is shared, and dreams are realized. Feel free to explore our courses, meet our exceptional tutors, and learn more about our mission to empower young minds.</P>
+        </div>
+        <div class="thank">
+            <P>Thank you for considering Super-Duper Tuition Center as your partner in education. We look forward to embarking on this exciting adventure together!"</P>
+        </div>
+</div>
+    <footer>
+        Super-Duper Tuition Center:&nbsp; &#169; 2023 All right reserve
+    </footer>
+</body>
+</html>

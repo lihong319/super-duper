@@ -1,0 +1,280 @@
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <meta name="keyword" content="super ,duper,tuition"/>
+        <link href="../css/all.css" rel="stylesheet"/>
+        <link href="../css/registration.css" rel="stylesheet"/>
+
+        <script src="../JavaScript/registration.js"></script>
+
+    </head>
+
+<body>
+    <header>
+        <img src="../pictures/logo.jpeg" style="width:15%; height:15%;"/>  
+        <img src="../pictures/logo2.png" style="width:80%; height:80%;"/>
+        
+         
+          <nav class="horizontal">
+              <ul class="mainMenu">
+                  <li><a href="home.html" class="subMenuTitle">Home</a></li>
+  
+                  <li><a href="about-us.html" class="subMenuTitle">about us &#9654;</a>
+                      <ul class="subMenu">
+                          <li><a href="accreditation.html">Accreditation</a></li>
+                          <li><a href="history.html">History</a></li>
+                          <li><a href="strategy.html">Strategy</a></li>
+                      </ul>
+  
+                  </li>
+  
+                  <li><a href="cta.html" class="subMenuTitle">CTA(call to action) &#9654;</a>
+                      <ul class="subMenu">
+                          <li><a href="contactus.html">Contact Us</a></li>
+                          <li><a href="login.html">application</a></li>
+                          <li><a href="Payment.html">payment</a></li>
+                      </ul>
+  
+                  </li>
+  
+                  <li><a href="subpage.html" class="subMenuTitle">subject & tutor &#9654;</a>
+                      <ul class="subMenu">
+                          <li><a href="tutoram.html">Tutor for Additional Mathematics</a></li>
+                          <li><a href="bio.html">Tutor for Biology</a></li>
+                          <li><a href="tutorACC.html">Tutor for Accounting</a></li>
+                          <li><a href="ekonomi.html">Tutor for Economy</a></li>
+                          <li><a href="welcome.html">Tutor for History</a></li>
+                          <li><a href="timetable.html">Schedule</a></li>
+                      </ul>
+  
+                  </li>
+                  
+                 
+                  <li><a href="otherInfo.html" class="subMenuTitle">others information &#9654;</a>
+                      <ul class="subMenu">
+                          <li><a href="FAQ.html">FAQ</a></li>
+                          <li><a href="feedback.html">Feedback</a></li>
+                          <li><a href="review.html">Review</a></li>
+                          <li><a href="fees.html">Fees</a></li>
+  
+                      </ul>
+  
+                  </li>
+              </ul>
+          </nav>
+  
+      </header>
+   
+    <input type="text" size="10" class="numbers" name="date" id="date" disabled />
+   
+    <form action="Payment.html" method="get" onclick="inti()">
+       <div class="grid-container">
+        <fieldset id="stdInfo">
+            <legend>Student Information</legend>
+
+            <div class="stdName">
+                <label for="stdName">Student Name</label>
+                <input name="stdName" id="stdName" type="text" placeholder="First Name and Last Name" required/>
+
+            </div>
+            <div class="stuIc">
+                <label for="stuIc">MyKad No.</label>
+                <input name="stdIc" id="stdIc" type="text" placeholder="000000-00-0000" pattern="[0-9]{6}-[0-9]{2}-[0-9]{4}" required />
+            </div>
+            <div><h4>student gender:</h4>
+                <label for="m"><input name="choice-radio" id="m" type="radio" value="m" required/>Male</label>
+                 <br/>
+                <label for="f"><input name="choice-radio" id="f" type="radio" value="f" required/>Female</label>
+                
+            </div>
+            <div class="address">
+                <label for="address" style="vertical-align: middle;">Home address</label>
+                <textarea name="address" id="address" required></textarea>
+            </div>
+            <div class="tel">
+                <label for="tel">Student Phone Number</label>
+                <input name="tel" id="tel" type="tel" placeholder="012-3456789" pattern="[0-9]{3}-[0-9]{7}"required/>
+            </div>
+            <div>
+                <label for="mail">Student's Email</label>
+                <input name="mail" id="mail" type="email" placeholder="example@gmail.com" required/>
+            </div>
+           
+            <div>
+                <label for="birthday">Date of Birth</label>
+                <input name="birthday" id="birthday" type="date" required/>
+            </div>
+            <div>
+                <label for="grade">Student current Grade<br/> (if you didn't take this subject, leave it default) <br/></label>
+                <br/>
+                <label for="am">Additional Mathematics</label>
+                <select id="am">
+                    <option value="default">default</option>
+                    <option value="A+">A+</option>
+                    <option value="A" >A</option>
+                    <option value="A-" >A-</option>
+                    <option value="B+" >B+</option>
+                    <option value="B" >B</option>
+                    <option value="C+" >C+</option>
+                    <option value="C" >C</option>
+                    <option value="D" >D</option>
+                    <option value="E" >E</option>
+                    <option value="F" >F</option>
+                </select>
+                <br/>
+                <label for="bio">Biology</label>
+                <select id="bio">
+                    <option value="default">default</option>
+                    <option value="A+">A+</option>
+                    <option value="A" >A</option>
+                    <option value="A-" >A-</option>
+                    <option value="B+" >B+</option>
+                    <option value="B" >B</option>
+                    <option value="C+" >C+</option>
+                    <option value="C" >C</option>
+                    <option value="D" >D</option>
+                    <option value="E" >E</option>
+                    <option value="F" >F</option>
+                </select>
+                <br/>
+                <label for="acc">Accounting</label>
+                <select id="acc">
+                    <option value="default">default</option>
+                    <option value="A+">A+</option>
+                    <option value="A" >A</option>
+                    <option value="A-" >A-</option>
+                    <option value="B+" >B+</option>
+                    <option value="B" >B</option>
+                    <option value="C+" >C+</option>
+                    <option value="C" >C</option>
+                    <option value="D" >D</option>
+                    <option value="E" >E</option>
+                    <option value="F" >F</option>
+                </select>
+                <br/>
+                <label for="eco">Economy</label>
+                <select id="eco">
+                    <option value="default">default</option>
+                    <option value="A+">A+</option>
+                    <option value="A" >A</option>
+                    <option value="A-" >A-</option>
+                    <option value="B+" >B+</option>
+                    <option value="B" >B</option>
+                    <option value="C+" >C+</option>
+                    <option value="C" >C</option>
+                    <option value="D" >D</option>
+                    <option value="E" >E</option>
+                    <option value="F" >F</option>
+                </select>
+                <br/>
+                <label for="sej">History</label>
+                <select id="sej">
+                    <option value="default">default</option>
+                    <option value="A+">A+</option>
+                    <option value="A" >A</option>
+                    <option value="A-" >A-</option>
+                    <option value="B+" >B+</option>
+                    <option value="B" >B</option>
+                    <option value="C+" >C+</option>
+                    <option value="C" >C</option>
+                    <option value="D" >D</option>
+                    <option value="E" >E</option>
+                    <option value="F" >F</option>
+                </select>
+                <br/>
+                <label for="result">upload your result</label>
+                <input name="resultF" id="resultF" type="file" required/>
+            </div>
+            <div class="eduBackground">
+                <label>Previous Educational Background (optional)</label>
+                <textarea name="eduBackground" id="eduBackground"></textarea>
+            </div>
+           
+            
+            <div>
+                <h4>Physical Disability/Illness</h4>
+                <label><input name="illness" id="noIllness" type="radio" required  />No Disability</label>
+                <br/>
+                <label><input name="illness" id="yesIllness" type="radio" required/>Disability</label>
+                <br/>
+                <input name="typeIllness" id="typeIllness" type="text" placeholder="which illness"/>
+                <br/>
+                <label for="prove">medical certification or government certification</label>
+                <input name="illnessF" id="illnessF" type="file"/>
+            </div>
+            <div>
+                <label for="emergency">Emergency Contact Number</label>
+                <input name="emergency" id="emergency" type="text" placeholder="012-3456789" pattern="[0-9]{3}-[0-9]{7}" required/>
+            </div>
+            
+        </fieldset>
+    
+        <fieldset id="parentInfo">
+            <legend>Parent's or guardian's information</legend>
+            <div>
+                <label for="parentName">Parent's or guardian's name</label>
+                <input name="parentName" id="parentName" type="text" placeholder="First Name and Last Name" required/>
+            </div>
+            <div>
+                <label for="parentTel">Parent phone number</label>
+                <input name="parentTel" id="parentTel" type="tel" placeholder="012-3456789" pattern="[0-9]{3}-[0-9]{7}" required/>
+            </div>
+            <div>
+                <label for="parentMail">parent Email</label>
+                <input name="parentMail" id="parentMail" type="email" placeholder="example@gmail.com" required/>
+            </div>
+            <div><h4>relationship to student</h4>
+               
+                <label for="rel"><input name="relationship" id="parent" value="parentr" type="radio" required />Parent</label>
+                <br/>
+                <label for="rel"><input name="relationship" id="guardian" value="parent" type="radio" required />guardian</label>
+
+            </div>
+           
+            <div>
+                <label for="work">Occupation</label>
+                <input name="work" id="work" type="text" required/>
+            </div>
+            <div>
+                <label for="company">Occupation Company</label>
+                <input name="company" id="company" type="text" required/>
+            </div>
+            <div>
+                <label for="occuAddress">Occupation Address</label>
+                <textarea name="occuAddress" id="occuAddress" required></textarea>
+            </div>
+            <div>
+                <label for="income">parent monthly income</label>
+                <input name="income" id="income" type="text" placeholder="RM100000.00" required/>
+            </div>
+            <div>
+                <label for="result">upload parent pay slip</label>
+                <input name="payslip" id="payslip" type="file" required/>
+            </div>
+            <div>
+                <label for="emergency">Emergency Contact Number</label>
+                <input name="emergency" id="emergency" type="text" placeholder="012-3456789" pattern="[0-9]{3}-[0-9]{7}" required/>
+            </div>
+
+             <label >
+            <input name="term" id="term" type="checkbox" value="1" required/><a href="termAndCondition.html" class="term">Term and condition</a>
+        </label> 
+        </fieldset>
+
+     
+        <br/>
+        <input type="reset" value="reset" />
+        <input type="submit" value="Submit"  />
+    </div>
+    </form>
+
+
+    <footer>
+        Super-Duper Tuition Center:&nbsp; &#169; 2023 All right reserve
+    </footer>
+</body>
+</html>
+

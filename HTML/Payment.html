@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<head>
+<title>Payment-SDTC</title>
+<link rel="stylesheet" href="../CSS/payment.css"/>
+<link href="../CSS/all.css" rel="stylesheet"/>
+
+<script type="text/javascript">
+//define a new fucntion with parameter
+function display(obj,num) {
+   //get correct id from html
+   var price = "Price" + num;
+   var qty = "Quantity" + num;
+   var amount = "Amount" + num;
+
+
+   //refer to select option, != 0 means user selected certain item
+   if(obj.selectedIndex != 0) {
+      //display thee book price
+      document.getElementById(price).value = obj.value;
+      //set default quantity as 0
+      document.getElementById(qty).value = "0";
+      //set amount quantity as 0
+      document.getElementById(amount).value = "0.00";
+      //enabled quantity field
+      document.getElementById(qty).disabled = false;
+      ////set focus for quantity field
+      document.getElementById(qty).focus();
+      //call calculate function
+      calculate();
+   } else {
+      //display thee book price as 0.00
+      document.getElementById(price).value = "0.00";
+      //disabled quantity and amount field
+      document.getElementById(amount).disabled = true;
+      document.getElementById(qty).disabled = true;
+      document.getElementById(price).disabled = true;
+      
+      
+      
+      //call calculate function
+      calculate();
+   }
+}
+//P3
+function sub(obj,num){
+   var amount = "Amount" + num;
+   var price = "Price" + num;
+   var qty = obj.selectedIndex;
+
+   if(qty>0){
+      var subtotal = parseFloat(document.getElementById(price).value) * qty; //change data type for calculation
+      document.getElementById(amount).value = subtotal.toFixed(2);//convert to 2 decimal point
+      calculate();
+   } else {
+      var subtotal = parseFloat(0);
+      document.getElementById(amount).value = subtotal.toFixed(2);
+      calculate();
+   }
+
+}
+
+//P4
+function calculate(){
+   var amt1, amt2, amt3, amt4, amt5, total;
+
+   //get subtotal from html
+   amt1 = parseFloat(document.getElementById('Amount1').value);
+   amt2 = parseFloat(document.getElementById('Amount2').value);
+   amt3 = parseFloat(document.getElementById('Amount3').value);
+   amt4 = parseFloat(document.getElementById('Amount4').value);
+   amt5 = parseFloat(document.getElementById('Amount5').value);
+  
+
+   //calculate total amount
+   total = amt1 + amt2 + amt3 + amt4 + amt5;
+
+   //display total amount
+   document.getElementById('totalAmount').value = total;
+}
+
+function cancelorder(){
+   if(confirm("Are you sure want to cancel?") == 1 ){
+      document.book.reset(); //reset and clear form
+      window.location.reload(); //reflesh
+   }
+}
+
+
+   function quantity(){
+	for(num=0; num<=1 ; num++)
+	{
+		document.write("<option>" + num + "</option>");
+	}
+	
+}
+</script>
+
+</head>
+<body>
+   <header>
+      <img src="../pictures/logo.jpeg" style="width:15%; height:15%;"/>  
+      <img src="../pictures/logo2.png" style="width:80%; height:80%;"/>
+      
+       
+        <nav class="horizontal">
+            <ul class="mainMenu">
+                <li><a href="home.html" class="subMenuTitle">Home</a></li>
+
+                <li><a href="about-us.html" class="subMenuTitle">about us &#9654;</a>
+                    <ul class="subMenu">
+                        <li><a href="accreditation.html">Accreditation</a></li>
+                        <li><a href="history.html">History</a></li>
+                        <li><a href="strategy.html">Strategy</a></li>
+                    </ul>
+
+                </li>
+
+                <li><a href="cta.html" class="subMenuTitle">CTA(call to action) &#9654;</a>
+                    <ul class="subMenu">
+                        <li><a href="contactus.html">Contact Us</a></li>
+                        <li><a href="login.html">application</a></li>
+                        <li><a href="Payment.html">payment</a></li>
+                    </ul>
+
+                </li>
+
+                <li><a href="subpage.html" class="subMenuTitle">subject & tutor &#9654;</a>
+                    <ul class="subMenu">
+                        <li><a href="tutoram.html">Tutor for Additional Mathematics</a></li>
+                        <li><a href="bio.html">Tutor for Biology</a></li>
+                        <li><a href="tutorACC.html">Tutor for Accounting</a></li>
+                        <li><a href="ekonomi.html">Tutor for Economy</a></li>
+                        <li><a href="welcome.html">Tutor for History</a></li>
+                        <li><a href="timetable.html">Schedule</a></li>
+                    </ul>
+
+                </li>
+                
+               
+                <li><a href="otherInfo.html" class="subMenuTitle">others information &#9654;</a>
+                    <ul class="subMenu">
+                        <li><a href="FAQ.html">FAQ</a></li>
+                        <li><a href="feedback.html">Feedback</a></li>
+                        <li><a href="review.html">Review</a></li>
+                        <li><a href="fees.html">Fees</a></li>
+
+                    </ul>
+
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+<form name="book" id="book"   action="payment2.html"  method="get" >  
+
+<tr>
+
+<h1>Super-Duper Tuition Centre</h1>
+</tr>
+
+<div class="top">
+<tr>
+   <td>Name:</td>
+   <td><input type="text" name="customerName" id="customerName" size="30"  required  /></td>
+</tr>   
+
+<tr>
+   <td>Tel:</td>
+   <td><input type="tel" name="telNo" id="telNo" size="30"  required /></td>
+</tr>
+</div>
+
+</table>
+
+
+<div class="box">
+<table>
+<tr>
+   <th>Subject</th>
+   <th>Price</th>
+   <th>Quantity</th>
+   <th>Amount (RM)</th>
+</tr>
+
+
+
+<tr>
+   <td>1.
+
+  <input type="checkbox" id="decs1" name="decs1"  onchange="display(this,1);" value="80.00">
+  <label for="subject1"> BIOLOGY</label><br>
+  
+   </td>
+   <td><input type="text" name="Price1" id="Price1" readonly size=8 /></td>
+   <td>
+   <select name="Quantity1"  id="Quantity1" onchange="sub(this,1);" disabled>
+   	<script type="text/javascript">
+   		quantity();
+   	</script>
+   </select>
+   </td>
+   <td><input type="text" name="Amount1" id="Amount1" size=10 class=numbers  value="0.00"  onchange="calculate();" disabled  /></td>
+</tr>
+
+
+
+
+
+
+<tr>
+   <td>2.   
+   
+   <input type="checkbox" id="decs2" name="decs2"  onchange="display(this,2);" value="80.00">
+  <label for="subject2"> ACCOUNTING</label><br>
+  
+</td>
+   <td><input type="text" name="Price2" id="Price2" readonly  size=8 /></td>
+   <td>
+      <select name="Quantity2" id="Quantity2"   onchange="sub(this,2);"  disabled >
+   	<script type="text/javascript">
+   		quantity();
+   	</script>
+   </select>
+
+   </td>
+   <td><input type="text" name="Amount2" id="Amount2" size=10 class=numbers value="0.00"  onchange="calculate();" disabled /></td>
+</tr>
+<tr>
+
+
+
+   <td>3.   
+     <input type="checkbox" id="decs3" name="decs3"  onchange="display(this,3);" value="80.00">
+  <label for="subject3"> ADDMATHS</label><br>
+</td>
+	<td><input type="text" name="Price3" id="Price3" readonly  size=8 /></td>
+   <td>
+      <select name="Quantity3" id="Quantity3"   onchange="sub(this,3);"  disabled >
+   	<script type="text/javascript">
+   		quantity();
+   	</script>
+   </select>
+
+   </td>
+   <td><input type="text" name="Amount3" id="Amount3" size=10 class=numbers value="0.00"  onchange="calculate();" disabled /></td>
+</tr>
+<tr>
+
+
+<td>4.   
+     <input type="checkbox" id="decs4" name="decs4"  onchange="display(this,4);" value="80.00">
+  <label for="subject4"> ECONOMY</label><br>
+</td>
+	<td><input type="text" name="Price4" id="Price4" readonly  size=8 /></td>
+   <td>
+      <select name="Quantity4" id="Quantity4"   onchange="sub(this,4);"  disabled >
+   	<script type="text/javascript">
+   		quantity();
+   	</script>
+   </select>
+
+   </td>
+   <td><input type="text" name="Amount4" id="Amount4" size=10 class=numbers value="0.00"  onchange="calculate();" disabled /></td>
+</tr>
+<tr>
+
+	
+
+<td>5.   
+     <input type="checkbox" id="decs5" name="decs5"  onchange="display(this,5);" value="80.00">
+  <label for="subject5"> HISTORY</label><br>
+ </td>
+     <td><input type="text" name="Price5" id="Price5" readonly  size=8 /></td>
+    <td>
+       <select name="Quantity5" id="Quantity5"   onchange="sub(this,5);"  disabled >
+        <script type="text/javascript">
+            quantity();
+        </script>
+    </select>
+ 
+    </td>
+    <td><input type="text" name="Amount5" id="Amount5" size=10 class=numbers value="0.00"  onchange="calculate();" disabled /></td>
+ </tr>
+
+
+
+</div>
+
+<tr>
+   <td align:right width=360 colspan=3 >Total Amount:</td>
+   <td width=85><input type="text" name="totalAmount" id="totalAmount" size="10"   value="0.00"  disabled  /></td>
+</tr>
+</table>
+
+	<div>
+      <input type="Submit" value="Submit"  />
+      &nbsp;&nbsp;
+      <input type="button" value="Cancel" onclick="cancelorder()"  />
+       &nbsp;&nbsp;
+    </div>
+</form>
+</div>
+<footer>
+   Super-Duper Tuition Center:&nbsp; &#169; 2023 All right reserve
+</footer>
+</body>
+
+</html>

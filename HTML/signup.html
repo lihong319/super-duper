@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Super-Duper</title>
+    <link href="../CSS/all.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="../CSS/login.css" />
+</head>
+
+<body>
+    <header>
+        <img src="../pictures/logo.jpeg" style="width:15%; height:15%;"/>  
+        <img src="../pictures/logo2.png" style="width:80%; height:80%;"/>
+        
+         
+          <nav class="horizontal">
+              <ul class="mainMenu">
+                  <li><a href="home.html" class="subMenuTitle">Home</a></li>
+  
+                  <li><a href="about-us.html" class="subMenuTitle">about us &#9654;</a>
+                      <ul class="subMenu">
+                          <li><a href="accreditation.html">Accreditation</a></li>
+                          <li><a href="history.html">History</a></li>
+                          <li><a href="strategy.html">Strategy</a></li>
+                      </ul>
+  
+                  </li>
+  
+                  <li><a href="cta.html" class="subMenuTitle">CTA(call to action) &#9654;</a>
+                      <ul class="subMenu">
+                          <li><a href="contactus.html">Contact Us</a></li>
+                          <li><a href="login.html">application</a></li>
+                          <li><a href="Payment.html">payment</a></li>
+                      </ul>
+  
+                  </li>
+  
+                  <li><a href="subpage.html" class="subMenuTitle">subject & tutor &#9654;</a>
+                      <ul class="subMenu">
+                          <li><a href="tutoram.html">Tutor for Additional Mathematics</a></li>
+                          <li><a href="bio.html">Tutor for Biology</a></li>
+                          <li><a href="tutorACC.html">Tutor for Accounting</a></li>
+                          <li><a href="ekonomi.html">Tutor for Economy</a></li>
+                          <li><a href="welcome.html">Tutor for History</a></li>
+                          <li><a href="timetable.html">Schedule</a></li>
+                      </ul>
+  
+                  </li>
+                  
+                 
+                  <li><a href="otherInfo.html" class="subMenuTitle">others information &#9654;</a>
+                      <ul class="subMenu">
+                          <li><a href="FAQ.html">FAQ</a></li>
+                          <li><a href="feedback.html">Feedback</a></li>
+                          <li><a href="review.html">Review</a></li>
+                          <li><a href="fees.html">Fees</a></li>
+  
+                      </ul>
+  
+                  </li>
+              </ul>
+          </nav>
+  
+      </header>
+
+    <div class="signup-box">
+        <h1>Sign Up</h1>
+        <form id="signup-form" action="">
+            <label for="uname">Username</label>
+            <input type="text" name="uname" id="uname" required/>
+            <label for="psw">Password</label>
+            <input type="password" name="psw" id="psw" required/>
+            <label for="c-psw">Confirm Password</label>
+            <input type="password" name="c-psw" id="c-psw" required/>
+            <button type="submit">Submit</button>
+            <input type="reset" value="Reset"/>
+        </form>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const signUpForm = document.querySelector("#signup-form");
+            const usernameInput = document.querySelector("#uname");
+            const passwordInput = document.querySelector("#psw");
+            const confirmPasswordInput = document.querySelector("#c-psw");
+    
+            function validateAndRedirect() {
+                // Check if the password and confirm password match
+                if (passwordInput.value !== confirmPasswordInput.value) {
+                    alert("Passwords do not match. Please try again.");
+                    confirmPasswordInput.value = ""; // Reset the confirm password field
+                } else {
+                    // Store the username and password in local storage
+                    localStorage.setItem("username", usernameInput.value);
+                    localStorage.setItem("password", passwordInput.value);
+                    // Redirect to the login page
+                    window.location.href = "login.html";
+                }
+            }
+    
+            // You can also listen for the "submit" event on the form
+            signUpForm.addEventListener("submit", function (e) {
+                e.preventDefault(); // Prevent the form from submitting
+                validateAndRedirect();
+            });
+        });
+    </script>
+    
+
+    <footer>
+        Super-Duper Tuition Center: &#169; 2023 All rights reserved
+    </footer>
+</body>
+
+</html>
