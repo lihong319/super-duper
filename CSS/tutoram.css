@@ -1,0 +1,104 @@
+@charset "utf-8";
+
+a{
+    text-decoration: none;
+}
+
+h1{
+    text-align: center;
+    color: rgb(238, 87, 112);
+    float: none;
+}
+
+p{
+    font-family: Comic Sans MS;
+    padding-left: 15px;
+    color: rgb(68, 0, 255)
+}
+
+h2{
+    font-family: Comic Sans MS;
+    padding-left: 15px;
+    text-decoration: underline;
+}
+
+video{
+    display: block;
+    margin: 20px auto;
+    width: 300px;
+}
+
+aside{
+    margin: 25px 25px 25px 0px;
+    background-color: rgb(255, 177, 66);
+    box-shadow: inset 15px 15px 25px rgba(101, 101, 101, 0.4),
+                inset -15px -15px 25px rgba(101, 101, 101, 0.4);
+    border-radius: 35px;
+    padding: 20px;
+    width: 400px;    
+    float: left;
+}
+
+footer{
+    margin-top: 80%;
+    
+}
+
+aside.aboutme{
+    width: 970px;
+    height: 540px;  
+}
+
+aside.techniques{
+    width: 970px;
+    height: 420px;  
+}
+
+aside.topics{
+    float: right;
+}
+
+aside.topics h2{
+    text-align: center;
+    color: rgba(51, 51, 51, 0.9);   
+    font-size: 1.5em;
+    font-family:Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+    line-height: 1em;
+    font-weight: normal;
+    margin: 0px 0px 5px 0px;
+}
+
+aside.topics p{
+    font-size: 1.1em;
+    text-align: center;
+    margin: 0px 0px 10px 0px;
+}
+
+div.chapters {
+    background-color: rgba(0, 0, 0, 0.25);   
+    height: 300px;
+    overflow: hidden;
+    border: rgb(151, 151, 151) 10px inset;
+    margin: 0px 5px;
+    font-size: 20px;
+}
+
+@keyframes scroll{
+    0% {transform: translateY(0);} 
+    100% {transform: translateY(-100%);} 
+}
+
+div.chapters table{
+    animation: scroll 15s linear infinite;
+}
+
+div.chapters:hover table{
+    animation-play-state: paused;
+}
+
+ul{
+    font-size: 20px;
+    font-family: Comic Sans MS;
+    color: rgb(116, 0, 248)
+}
+

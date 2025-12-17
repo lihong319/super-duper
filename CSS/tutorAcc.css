@@ -1,0 +1,134 @@
+@charset "utf-8";
+
+
+
+
+
+
+
+div.intro{
+   
+    border-radius: 25px;
+    border:2px solid gold;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 5% 5% 5% 5%;
+}
+
+div.intro > div.word  {
+    
+    display:block;
+   
+   width: 60%;
+   float: right;
+   height: 310px;
+   padding:15px 20px 15px 25px;
+    
+}
+
+
+div.cert > img{
+   position: absolute;
+    left: 10%;
+    top:67%;
+   
+}
+
+div.edu{
+    
+    border-radius: 25px;
+    border:2px solid gold;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 5% 5% 5% 5%;
+    height:400px;
+}
+
+div#word{
+   color: white;
+   background-color: black;
+   width:60%;
+   padding:50px;
+
+}
+
+div.edu > img{
+    position:relative;
+    left: 70%;
+    top:-295px;
+}
+
+.teach{grid-area:teach;}
+.story{grid-area:story}
+.learn{grid-area:learn;}
+.environment{grid-area:environment;}
+.grid-container{
+    display: grid;
+    grid-template-areas: 
+    'teach story'
+    'learn environment';
+
+    gap:50px;
+}
+
+div.teach{
+    border-radius: 25px;
+    border:2px solid gold;
+  
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 3% 3% 3% 3%;
+}
+
+div.story{
+    border-radius: 25px;
+    border:2px solid gold;
+ 
+    margin-left: 5%;
+    margin-right: 5%;
+    
+    padding: 3% 3% 3% 3%;
+}
+
+div.learn{
+    border-radius: 25px;
+    border:2px solid gold;
+    padding: 3% 3% 3% 3%;
+  
+    margin-left: 5%;
+   
+}
+
+div.environment{
+    border-radius: 25px;
+    border:2px solid gold;
+    padding: 3% 3% 3% 3%;
+   
+    margin-left: 5%;
+    margin-right: 5%;
+    
+}
+
+
+/*table*/
+
+table{
+    border: 3px solid gray;
+    margin:100px auto 100px auto;
+   
+    background:linear-gradient(to right, rgb(0,0,139),rgb(65,105,255));
+    color:white;
+}
+
+caption{
+    font-size: 2em;
+    color:black;
+    font-weight: bold;
+}
+th,td{
+    border: 2px solid gray;
+}

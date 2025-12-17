@@ -1,0 +1,60 @@
+html{
+    background: url(../pictures/blue-wpp.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+
+
+
+h1,h3{font-family:Times New Roman, Arial}
+.numbers {text-align:right; background-color:lightyellow}
+.numbers1 {text-align:right; background-color:pink }
+body{
+   text-align:center;
+}
+
+.box{
+   position:absolute;
+   border: 2px solid white;
+   margin:100px auto 0 33%;
+   
+   padding: 15px 23px 15px 15px;
+   
+}
+
+body{
+   
+    color:rgb(246, 246, 246);
+}
+
+.btn{
+   margin-top:300px;
+    position: absolute;
+    
+}
+
+h1{
+   text-align:center;
+   padding-bottom:30px;
+}
+
+.top {
+   position: absolute;
+   margin-left: 32%;
+   padding: 20px 20px;
+}
+
+
+
+
+@media print{
+header, input[type='reset'], input[type='submit'], input[type='button'] {display:none; }
+
+}
+
+footer{
+   margin-top: 30%;
+   position:relative;
+}

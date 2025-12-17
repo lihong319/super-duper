@@ -1,0 +1,122 @@
+.accordion1 {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 60px;
+  width: 100%;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  transition: 0.4s;
+  background-image: url(../pictures/banner1.avif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+
+.accordion2 {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 60px;
+  width: 100%;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  transition: 0.4s;
+  background-image: url(../pictures/banner2.avif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.accordion3 {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 60px;
+  width: 100%;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  transition: 0.4s;
+  background-image: url(../pictures/banner3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.accordion4 {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 60px;
+  width: 100%;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  transition: 0.4s;
+  background-image: url(../pictures/banner4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.accordion5 {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 60px;
+  width: 100%;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  transition: 0.4s;
+  background-image: url(../pictures/banner5.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active1, .accordion1:hover {
+  background-color: #ccc;
+}
+
+.active2, .accordion2:hover {
+  background-color: #ccc;
+}
+
+.active3, .accordion3:hover {
+  background-color: #ccc;
+}
+
+.active4, .accordion4:hover {
+  background-color: #ccc;
+}
+
+.active5, .accordion5:hover {
+  background-color: #ccc;
+}
+
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: auto;
+  transition: max-height 0.2s ease-out;
+}
+
+p,ul{
+  text-align: center;
+  font-size: 25px;
+}
+
+h2{
+  font-size: 30px;
+  color:white;
+}

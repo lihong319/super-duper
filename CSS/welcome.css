@@ -1,0 +1,108 @@
+
+/* Adjust the z-index for header */
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-align: center;
+    text-decoration: none;
+}
+
+.contanier{
+    width: 100%;
+    height: 100vh;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contanier::before{
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 40%;
+    left: 0;
+    background-color: #0f2d88;
+}
+
+.contanier .hero{
+    position: relative;
+    z-index: 10;
+    height: 85vh;
+    width: 75%;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(25px);
+    border: 3px solid #1448c299;
+    border-radius: 20px;
+    box-shadow: -15px 17px 17px rgba(10, 10, 10, 0.15);
+}
+
+.hero .content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 40px;
+}
+
+
+.hero .content .div-text{
+    width: 40%;
+    margin-top: 200px;
+}
+
+.hero .content .div-text h1{
+    margin-bottom: 20px;
+    font-size: 70px;
+    color: #fff;
+}
+
+.hero .content .div-text h4{
+    margin-bottom: 10px;
+    font-size: 35px;
+    color: #f5f5f6;
+}
+
+.hero .content .div-text p{
+    margin-bottom: 50px;
+    font-size: 22px;
+    color: #f5f5f6;
+}
+
+.hero .content .div-text .btn{
+    padding: 15px 20px;
+    background-color: #a0c1e0;
+    border: 2px solid #79cee3;
+    color: #fff;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.hero .content .div-text .btn:hover{
+    color: #6579d9;
+    transition: 0.3s;
+    background-color: rgba(13, 50, 164, 0.8);
+}
+
+.hero .content .div-text{
+    width: 50%;
+
+    position: absolute;
+}
+
+.hero .content .div-img {
+  
+    margin-left: 70%;
+    margin-top: 15%;
+
+}
+
+.hero .content .div-img img{
+    width: 100%; 
+}
+

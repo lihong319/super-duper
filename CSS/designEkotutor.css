@@ -1,0 +1,88 @@
+@charset "utf-8";
+
+
+ p {
+    line-height: 1.5em;
+ }
+
+ h1, h2 , h3{
+   text-decoration: underline;
+ }
+
+
+/**/
+div.ekotutor{
+   background-color: rgb(245,240,142);
+    border: 3px solid rgb(91,107,90);
+    margin:10% auto 10% auto;
+    display:flex;
+    
+    
+}
+
+div.intro{
+   background-color: rgb(207,200,101);
+   font-size: 1.1em;
+   padding: 0px 15px 0px 15px;
+}
+
+div.detail{
+   font-size: 1.2em;
+   padding: 0px 20px 0px 20px;
+}
+
+div.reference > p{
+  margin-left:5%;
+   float: left;
+}
+
+/**/
+ 
+
+ 
+ 
+
+ 
+
+ 
+ 
+ 
+
+
+
+
+
+
+/**/
+pre {
+   font-size: 1.5em;
+   font-family:'Times New Roman', Times, serif;
+}
+/**/
+h3 {
+   font-size:130%
+}
+
+section.ekotutor article p {
+   float: left;
+}
+
+button{
+   height: 50px;
+   border-radius: 25%;
+   font-family:'Times New Roman', Times, serif;
+   background-color: black;
+   color: white;
+}
+
+video#ecovideo {
+   position:relative;
+   left: 8%;
+}
+
+video#ecovideo2 {
+   position:relative;
+   left: 8%;
+}
+
+

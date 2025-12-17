@@ -1,0 +1,136 @@
+@charset "utf-8";
+
+input#date.numbers{
+    float : right;
+    margin : 25px 25px 0px 25px;
+}
+
+legend{
+    color: rgb(135,206,250);
+    background-color: rgb(72,61,139);
+}
+
+form{
+   margin:auto;
+    padding: 50px;
+}
+
+fieldset{
+    margin:100px 20px 80px 20px;
+    border-radius: 25px;
+    width:45%;
+    float:left;
+}
+
+#date{
+    width:20%;
+    height:5%;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+label{
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+h4{
+    font-size: 1.2em;
+
+}
+
+input:not(input[type="radio"],input[type="submit"], input[type="checkbox"], input[type="reset"],#date), textarea, select{
+    margin:25px;
+    width:85%;
+   
+}
+
+
+input:not(input[type="radio"],input[type="submit"], input[type="checkbox"], input[type="reset"],#date){
+    height:50px;
+    border-radius: 15px;
+    font-size: 1.5em;
+}
+
+select,option{
+    height:40px;
+}
+
+textarea{
+    height:200px;
+}
+
+input[type="radio"]{
+    margin-bottom: 20px;;
+}
+
+input[type="checkbox"]{
+    margin-top: 20%;
+}
+
+
+/*submit*/
+input[type="submit"],input[type="reset"]{
+    background-color: aqua;
+    border:none;
+    border-radius: 10px;
+    padding:20px;
+    font-weight: 400;
+    font-size: 35px;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+input[type="submit"]:hover ,input[type="reset"]:hover{
+    box-shadow: 0 0 0 4px black;
+}
+
+
+
+
+
+input[type="submit"]{
+   float:right;
+   margin: 800px 0 100px 0;
+}
+input[type="reset"]{
+    margin: 800px 0 100px 0;
+}
+
+/*validation*/
+
+
+input:focus:valid:not(input[type="submit"]) {
+    background-image: url(../pictures/rb_okay.png);
+    background-color: rgb(220,255,220) ;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size:contain;
+}
+textarea:focus:valid {
+    background-image: url(../pictures/big\ true.jpg);
+    background-color: rgb(220,255,220) ;
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size:30% 50%;
+}
+
+input:focus:invalid{
+    background-image: url(../pictures/rb_warning.png);
+    background-color: rgb(255,230,230) ;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size:contain;
+}
+textarea:focus:invalid{
+    background-image: url(../pictures/big\ warning.jpg);
+    background-color: rgb(255,230,230) ;
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size:30% 50%;
+}
+
+
+
+

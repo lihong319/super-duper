@@ -1,0 +1,42 @@
+
+div.FAQ {
+    margin-left: 40px;
+    margin-right: 40px;
+    font-size: 1.3em;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+div.FAQ ul{
+    list-style-type: none;
+}
+
+textarea {
+    margin-top: 10px;
+    height: 100px;
+    width: 99%;
+ }
+
+ fieldset{
+    margin-top: 30px;
+    width: 95%;
+    background-color:burlywood;
+    font-size: 0.8em
+ }
+
+ legend{
+    font-weight: bold;
+    color: rgba(17, 1, 1, 0.856);
+    background-color: rgba(240, 95, 43, 0.87);
+    width: 100px;
+    height: 30px;
+    
+ }
+
+ input:focus, select:focus, textarea:focus {
+    background-color: rgb(255, 255, 180);
+ }
+
+ div {
+    margin-top: 10px;
+ }
+

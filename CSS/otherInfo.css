@@ -1,0 +1,93 @@
+@charset "utf-8";
+
+.eventH{
+    text-align: center;
+   
+}
+div.event{
+    margin-top:100px;
+    margin-left:5%;
+    margin-right:5%;
+    margin-bottom: 100px;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    padding-left: 3%;
+    padding-right: 3%;
+    background-color: rgb(70,130,180);
+    float:left;
+    border-radius: 25px;
+    height : 1340px;
+}
+   
+
+
+div.event > div {
+   
+    width: 30%;
+    height: 550px;
+    vertical-align: middle;
+    text-align:center;
+    background-color: rgb(32,178,170);
+   
+   
+    
+    
+ 
+}
+div.explo{
+    top:50px;
+    
+    
+}
+
+div.parentTeacher{
+    
+    position: relative;
+    left: 34%;
+    top: -570px;
+}
+
+div.exam{
+    position: relative;
+    left: 68%;
+    top: -1140px;
+
+}
+
+div.celebrate{
+    position: relative;
+    top: -1100px;
+}
+
+div.charity{
+    position:relative;
+    top :-1668px;
+    left: 34%;
+}
+div.competition{
+    position: relative;
+    top: -2240px;
+    left: 68%;
+}
+
+/*news*/
+
+div.upcoming,
+div.eduNews,
+div.announcement {
+    
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+

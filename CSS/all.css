@@ -1,0 +1,108 @@
+/* */
+
+
+@charset "utf-8";
+* {box-sizing:border-box;}
+
+
+/*html element*/
+html{
+    background-color: rgb(173,216,230);
+}
+
+/* body element*/
+header{
+    background-color: white;
+}
+body {
+   
+    background:transparent ;
+    
+   
+}
+
+
+/* navigation list*/
+nav{
+    text-transform: capitalize;
+}
+
+ul.mainMenu > li{
+    list-style-type: none;
+    float: left;
+    display:block;
+    width:19%;
+    background-color: rgb(65, 198, 255);
+   
+    padding: 10px 10px;
+    text-align: center;
+    
+}
+
+a.subMenuTitle{
+    text-decoration: none;
+    color:black;
+
+}
+
+ul.subMenu {
+    list-style-type: none;
+    display: none;
+    background-color: white;
+    padding: 5px;
+    width: 20%;
+    position: absolute;
+    box-shadow: rgb(88, 123, 161) 5px 5px 15px; 
+    z-index: 100;
+}
+
+ul.mainMenu > li:hover{
+    background-color: rgb(171,196,222);
+}
+a.subMenuTitle:hover{
+    text-decoration: underline;
+    color:blue;
+    
+}
+
+
+
+a.subMenuTitle:hover + ul.subMenu , ul.subMenu:hover {
+    display:block;
+    
+    background-color: white;
+    padding:10px;
+    width:20%;
+    position: absolute;
+   
+
+}
+
+ul.subMenu >li >a{
+    text-decoration: none;
+    padding:5px;
+    line-height: 2em;
+    text-shadow: rgba(0,0,0,1) 0px 1px 1px;
+   
+    transition: all 1.2s linear;
+   
+}
+ul.subMenu > li > a:hover{
+    text-shadow: rgba(75,0,130,0.5) 0px 15px 4px;
+    
+}
+ul.subMenu > li:hover{
+    background-color: aqua;
+}
+
+
+
+div{
+    clear: both;
+}
+footer{
+    color: ivory;
+    background-color: rgb(25,25,112);
+    text-align: center;
+    padding:10px;
+}

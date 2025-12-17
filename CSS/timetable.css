@@ -1,0 +1,73 @@
+h1 {
+    text-align: center;
+    font-family: Comic Sans MS;
+    text-decoration: underline overline;
+    margin-top:100px;
+}
+
+td {
+    background-color: white;
+    color: black;
+}
+
+tr.subject{
+    font-size: 25px;
+    font-family: Comic Sans MS;
+    font-weight: bold;
+}
+th, td{
+    border: 3px solid black;
+}
+
+table.schedule {
+    width: 100%;
+    border: 1px solid black;
+    border-collapse: collapse;
+   margin:  50px 0 100px 0;
+   
+   
+    
+}
+
+
+table.schedule thead {
+    background-color: grey;
+    color: white;
+}
+
+table.schedule th {
+    padding: 10px;
+}
+
+
+table.schedule tbody {
+    background-color: white;
+}
+
+table.schedule td {
+    padding: 10px;
+    text-align: center;
+}
+
+
+table.schedule tfoot>tr>td {
+    background-color: white;
+    color: red;
+    font-weight: bold;
+    text-align: left;
+}
+
+table.schedule tfoot td {
+    padding: 15px;
+    font-family: Comic Sans MS;
+}
+
+
+td > a{
+    text-decoration: none;
+    color: black;
+}
+
+td > a:hover{
+    color:blue;
+}

@@ -1,0 +1,90 @@
+
+html{
+    background: url(../pictures/blue-wpp.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+   
+}
+
+.signup-box{
+    width:500px;
+    height: 400px;
+   margin: 100px auto 100px auto;
+    background-color: rgb(88, 161, 250);
+    border-radius: 10px;
+    box-shadow: 50px solid white;
+    
+}
+
+h1{
+    text-align: center;
+    padding-top: 15px;
+    color: midnightblue;
+    font-family: Tahoma;
+    font-size: 40px;
+    text-shadow: 1px 1px 2px rgb(255, 255, 255), 0 0 25px rgb(0, 217, 255), 0 0 10px rgb(254, 254, 254);
+}
+
+form{
+    width: 300px;
+    margin-left: 20px;
+}
+
+form label{
+    display: flex;
+    padding: 5px;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+form input{
+    width: 145%;
+    height: 30px;
+    padding: 7px;
+    border: none;
+    border: 1px solid gray;
+    border-radius: 6px;
+    outline: none;
+}
+
+input[type="button"]{
+    width: 320px;
+    height: 45px;
+    margin-top: 20px;
+    border: none;
+    background-color: #191070;
+    color: white;
+    width: 49%;
+    font-size: 18px;
+    font-family: Tahoma;
+}
+
+button{
+    width: 320px;
+    height: 45px;
+    margin-top: 20px;
+    border: none;
+    background-color: #191070;
+    color: white;
+    width: 49%;
+    font-size: 18px;
+    font-family: Tahoma;
+    cursor: pointer;
+}
+
+input[type="reset"]{
+    width: 320px;
+    height: 45px;
+    margin-top: 20px;
+    border: none;
+    background-color: #191070;
+    color: white;
+    width: 49%;
+    font-size: 18px;
+    font-family: Tahoma;
+}
